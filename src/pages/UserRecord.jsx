@@ -46,6 +46,11 @@ const UserRecord = ({
         userCountry: "Nepal",
       });
     } else {
+      if (userValue.userNumber.length <= 7) {
+        return setError("Please enter atleast 7digits PhoneNumber.");
+      } else {
+        setError("");
+      }
       const existingData =
         JSON.parse(localStorage.getItem("user-record")) || [];
       existingData[getUpdateIndex] = userValue;
