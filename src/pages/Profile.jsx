@@ -1,10 +1,10 @@
-import React from "react";
-import UserTable from "./UserTable";
+import React, { useEffect } from "react";
 import "./Profile.css";
 import { useNavigate } from "react-router-dom";
 
 const Profile = ({
   userDatas,
+  setUserDatas,
   setUserValue,
   setToggleButton,
   setGetUpdateIndex,
@@ -17,6 +17,11 @@ const Profile = ({
     setGetUpdateIndex(index);
     navigate("/");
   };
+
+  useEffect(() => {
+    const existingData = JSON.parse(localStorage.getItem("user-record")) || [];
+    setUserDatas(existingData);
+  }, []);
 
   return (
     <div>

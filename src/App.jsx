@@ -44,6 +44,7 @@ const App = () => {
           element={
             <Profile
               userDatas={userDatas}
+              setUserDatas={setUserDatas}
               setUserValue={setUserValue}
               setToggleButton={setToggleButton}
               setGetUpdateIndex={setGetUpdateIndex}
