@@ -1,0 +1,81 @@
+.tablewrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+th {
+  background-color: #00923f;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+td {
+  background-color: #7edda7;
+  padding: 8px;
+  font-size: 14px;
+}
+.actions {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sorting {
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+}
+.delete{
+    color: red;
+}
+.edit{
+    color: blue;
+}
+
+@media screen and (max-width: 700px) {
+    .tablewrapper {
+        width: 100vw;
+        align-items: center;
+        overflow-x: hidden;
+      }
+  thead {
+    display: none;
+  }
+  table{
+    width: 400px;
+  }
+  table,
+  tbody,
+  tr,
+  td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  tr {
+    margin-bottom: 15px;
+  }
+  td {
+    position: relative;
+    padding-left:40%;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.clear-all{
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}

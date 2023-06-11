@@ -1,0 +1,99 @@
+.formwrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  margin-top: 15px;
+}
+.crudForm {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 15px;
+  }
+
+fieldset {
+  width: 300px;
+  border-radius: 3px;
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  width: 300px;
+  padding: 8px;
+}
+legend{
+    color: #00923F;
+}
+.addressFieldSet{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding:3px;
+}
+.selectFieldset{
+    width: 315px;
+}
+
+.submitBtn{
+    border: none;
+    background-color: #00923F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.tableMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navigateBtn{
+  border: none;
+  background-color: #00923F;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.requiredField{
+  color: red;
+}
+.error{
+  color:red;
+  display: flex;
+  align-items: center;
+}
+.footerGap{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:700px) {
+  
+  .crudForm {
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .addressFieldSet{
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+  
+}

@@ -1,0 +1,22 @@
+.navbarWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(241, 233, 233);
+}
+.treeleafLogo{
+    width: 40px;
+}
+.navItems{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navList{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
